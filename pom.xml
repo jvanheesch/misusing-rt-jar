@@ -23,6 +23,8 @@
                 <configuration>
                     <source>${java.language.version}</source>
                     <target>${java.language.version}</target>
+                    <fork>true</fork>
+                    <compilerArgument>-XDignore.symbol.file</compilerArgument>
                 </configuration>
             </plugin>
         </plugins>
