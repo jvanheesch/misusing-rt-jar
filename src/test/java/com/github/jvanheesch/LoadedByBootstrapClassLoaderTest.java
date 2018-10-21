@@ -10,6 +10,9 @@ import java.util.Arrays;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+/**
+ * https://www.toptal.com/java/java-wizardry-101-a-guide-to-java-class-reloading
+ */
 class LoadedByBootstrapClassLoaderTest {
 
     /**
