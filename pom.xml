@@ -12,7 +12,35 @@
         <java.language.version>8</java.language.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit-jupiter.version>5.3.1</junit-jupiter.version>
+        <assertj.version>3.11.1</assertj.version>
     </properties>
+
+    <dependencies>
+        <!--Requires manual installation: https://github.com/quanla/classreloading -->
+        <dependency>
+            <groupId>qj.blog</groupId>
+            <artifactId>classreloading</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.xeustechnologies</groupId>
+            <artifactId>jcl-core</artifactId>
+            <version>2.8</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
